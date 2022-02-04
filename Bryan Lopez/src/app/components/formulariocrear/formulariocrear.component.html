@@ -1,0 +1,16 @@
+<form>
+    <div>
+        <label for="descripcion" class="form-label">Nueva tarea</label>
+        <div class="controles">
+            <div class="mb-3 text-input">
+                <input type="text" name="descripcion" [(ngModel)]="descripcion" placeholder="Ingresa tu tarea aquí"
+                    class="form-control" id="descripcion" autofocus>
+            </div>
+            <div class="boton-crear">
+                <button class="btn btn-danger btn-outline-light" (click)="crearTarea()">
+                    Crear
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
