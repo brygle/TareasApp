@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+.contenedor {
+    background-color: rgba(0,0,0,0.2);
+    margin-top: 20px;
+    padding: 35px;
+
+}
+
+.app {
+    box-shadow: -15px -15px rgba(0,0,0,0.13);
+}

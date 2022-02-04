@@ -1,0 +1,19 @@
+.controles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.text-input {
+    width: 75%;
+}
+
+.boton-crear {
+    width: 20%;
+}
+
+button {
+    width: 100%;
+}

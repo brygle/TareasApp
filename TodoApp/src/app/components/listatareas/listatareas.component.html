@@ -1,0 +1,21 @@
+<ul class="list-group list-group-flush">
+    <li class="list-group-item list-group-item-danger elemento" *ngFor="let tarea of tareas; let i=index">
+        <div class="tarea">
+            <div class="tarea-info">
+                <p [ngClass]="{'completada': tarea.completada}">{{tarea.descripcion}}</p>
+            </div>
+            <div class="tarea-controles">
+                <div class="check-control">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                        [checked]="tarea.completada" (change)="completarTarea(i)">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-danger" (click)="borrarTarea(i)">
+                        <i class="far fa-trash-alt"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </li>
+</ul>

@@ -1,0 +1,46 @@
+ul {
+    margin-bottom: 40px;
+}
+
+.elemento {
+    background-color: rgba(235,99,107,1);
+    margin-bottom: 5px;
+}
+
+.elemento:hover > .tarea > .tarea-controles{
+    display: flex;
+}
+
+.tarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tarea-info {
+    color: white;
+    font-size: 25px;
+}
+
+.completada {
+    text-decoration: line-through;
+}
+
+.tarea-controles {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: none;
+    
+}
+
+.check-control {
+    margin-right: 20px;
+}
+
+input[type="checkbox"] {
+    background-color: #e73649;
+    border: 1px solid white;
+}
